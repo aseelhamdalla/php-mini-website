@@ -2,7 +2,7 @@
    session_start();
    
    if (isset($_GET['userId'])) {
-       if (isset($_SESSION['usersdb'][$_GET['userId']])){
+       if (isset($_SESSION['usersdb'])){
             unset($_SESSION['usersdb'][$_GET['userId']]);
        }
    }

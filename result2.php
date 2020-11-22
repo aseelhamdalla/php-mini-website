@@ -14,7 +14,7 @@ if (!isset($_SESSION['usersdb']) && empty($_SESSION['usersdb'])) {
 $_SESSION['usersdb'] = array( array("role" => "admin" , "username" => "Aseel" , "passowrd" => "123"),
                   array("role" => "user" , "username" =>  "user1" , "passowrd" => "111"),
                   array("role" => "user" , "username" =>  "user2" , "passowrd" => "1234"),
-                  array("role" => "user" , "username" =>  "user3" , "passowrd" => "222"));
+                  array("role" => "admin" , "username" =>  "user3" , "passowrd" => "222"));
 }
                 
 foreach($_SESSION['usersdb'] as $key => $value){
